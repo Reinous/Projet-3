@@ -8,72 +8,108 @@
     <script src="https://kit.fontawesome.com/dce1f0882e.js" crossorigin="anonymous"></script>
     <title>ohmyfood</title>
     <link rel="shortcut icon" href="./images/logo/ohmyfood.png">
+    <link rel="stylesheet" href="./Css/style.css">
+
 </head>
 <body>
     <!-- *********************************************Logo Titre************************************* -->
     <header>
-        <div>
+        <div class="logo">
             <a href="index.html">
-                <h1>ohmyfood</h1>
+                <img src="./images/logo/ohmyfood.png" alt="ohmyfood">
             </a>
         </div>
     </header>
     <main>
         <!-- *************************************************Localisation********************************** -->
-        <div>
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Paris, Belleville</p>
+        <div class="acceuil-loca">
+            <i class="fas fa-map-marker-alt acceuil-loca__icone"></i>
+            <p class="acceuil-loca__texte">Paris, Belleville</p>
         </div>
-        <section>
+        <section class="section-acceuil">
             <!-- *********************************Titre et presentation de l'entreprise************************ -->
-            <div>
-                <h2>Réserver le menu qui vous convient</h2>
-                <p>Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
-            </div>
+                <h1 class="section-acceuil__titre">Réserver le menu qui vous convient</h1>
+                <p class="section-acceuil__texte">Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
             <!-- *************************************Bouton Violet*********************************** -->
-            <div>
+            <div class="Bouton-violet">
                 <p>Explorer nos restaurants</p>
             </div>
         </section>
         <section>
             <!-- **********************************Fonctionnement************************************ -->
-            <div>
-                <h3>Fonctionnement</h3>
-                <ol>
-                    <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
-                    <li><i class="fas fa-list"></i>Composer votre menu</li>
-                    <li><i class="fas fa-store"></i>Degustez au restaurant</li>
-                </ol>
+            <div class="acceuil-fonction__box">
+                <h2 class="acceuil-fonction__titre">Fonctionnement</h2>
+                    <div class="acceuil-fonction">
+                        <div class="acceuil-fonction__chiffre">1</div>
+                        <div class="acceuil-fonction__icone"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="acceuil-fonction__texte">Choisissez un restaurant</div>
+                    </div>
+                    <div class="acceuil-fonction">
+                        <div class="acceuil-fonction__chiffre">2</div>
+                        <div class="acceuil-fonction__icone"><i class="fas fa-list"></i></div>
+                        <div class="acceuil-fonction__texte">Composer votre menu</div>
+                    </div>
+                    <div class="acceuil-fonction">
+                        <div class="acceuil-fonction__chiffre">3</div>
+                        <div class="acceuil-fonction__icone"><i class="fas fa-store"></i></div>
+                        <div class="acceuil-fonction__texte">Degustez au restaurant</div>
+                    </div>
             </div>
         </section>
-        <section>
+        <section class="acceuil-resto">
             <!-- ********************************Restaurants************************************* -->
-            <h3>Restaurants</h3>
-            <div>
-                <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-                <h4>La palette du goût</h4>
-                <p>Ménilmontant</p>
-                <i class="far fa-heart"></i>
-                <p>Nouveau</p>
-            </div>
-            <div>
-                <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-                <h4>La note enchantée</h4>
-                <p>Charonne</p>
-                <i class="far fa-heart"></i>
-                <p>Nouveau</p>
-            </div>
-            <div>
-                <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
-                <h4>A la française</h4>
-                <p>Cité Rouge</p>
-                <i class="far fa-heart"></i>
-            </div>
-            <div>
-                <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le delice des sens">
-                <h4>Le delice des sens</h4>
-                <p>Folie-Méricourt</p>
-                <i class="far fa-heart"></i>
+            <h2 class="acceuil-resto__titre">Restaurants</h2>
+            <div class="acceuil-resto__vignettes">
+                <a href="./page_menu/La-palette-du-gout.html">
+                    <div class="acceuil-resto__vignet">
+                            <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" class="acceuil-resto__image">
+                            <p class="nouveau">Nouveau</p>
+                        <div class="acceuil-resto__bloc">
+                            <div class="acceuil-resto__bloc--info">
+                                <h4 class="acceuil-resto__bloc__titre">La palette du goût</h4>
+                                <p class="acceuil-resto__bloc__texte">Ménilmontant</p>
+                            </div>
+                            <i class="far fa-heart acceuil-resto__bloc--icone"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="./page_menu/La-note-enchantee.html">
+                    <div class="acceuil-resto__vignet">
+                            <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" class="acceuil-resto__image">
+                            <p class="nouveau">Nouveau</p>
+                        <div class="acceuil-resto__bloc">
+                            <div class="acceuil-resto__bloc--info">
+                                <h4 class="acceuil-resto__bloc__titre">La note enchantée</h4>
+                                <p class="acceuil-resto__bloc__texte">Charonne</p>
+                            </div>
+                            <i class="far fa-heart acceuil-resto__bloc--icone"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="./page_menu/A-la-française.html">
+                    <div class="acceuil-resto__vignet">
+                        <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française" class="acceuil-resto__image">
+                        <div class="acceuil-resto__bloc">
+                            <div class="acceuil-resto__bloc--info">
+                                <h4 class="acceuil-resto__bloc__titre">A la française</h4>
+                                <p class="acceuil-resto__bloc__texte">Cité Rouge</p>
+                            </div>
+                            <i class="far fa-heart acceuil-resto__bloc--icone"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="./page_menu/Le-delice-des-sens.html">
+                    <div class="acceuil-resto__vignet">
+                        <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le delice des sens" class="acceuil-resto__image">
+                        <div class="acceuil-resto__bloc">
+                            <div class="acceuil-resto__bloc--info">
+                                <h4 class="acceuil-resto__bloc__titre">Le délice des sens</h4>
+                                <p class="acceuil-resto__bloc__texte">Folie-Méricourt</p>
+                            </div>
+                            <i class="far fa-heart acceuil-resto__bloc--icone"></i>
+                        </div>
+                    </div>
+                </a>
             </div>
         </section>
     </main>

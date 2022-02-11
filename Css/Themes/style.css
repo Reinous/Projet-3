@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+/* Acceuil */
+    .acceuil-loca{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(218, 218, 218);
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+        .acceuil-loca__icone{
+            padding: 20px;
+        }
+        .acceuil-loca__texte{
+            padding: 20px 0;
+        }
+
+    .acceuil-titre{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .acceuil-texte{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+/* Bouton violet */
+    .Bouton-violet p    {
+        padding: 20px;
+    }
+        .Bouton-violet p{
+            background: linear-gradient(#9356DC, #FF79DA);
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+        }
+        .Bouton-violet{
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+        }
+        
+        
+    
