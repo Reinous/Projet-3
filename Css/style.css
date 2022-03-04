@@ -202,6 +202,12 @@ a {
           flex-direction: column;
 }
 
+.acceuil-resto__vignettes--lien:hover {
+  scale: 1.05;
+  -webkit-transition: scale 200ms ease;
+  transition: scale 200ms ease;
+}
+
 .acceuil-resto__vignet {
   position: relative;
   display: -webkit-box;
@@ -464,6 +470,7 @@ a {
 .plat {
   overflow: hidden;
   white-space: nowrap;
+  padding-left: 10px;
 }
 
 .plat__titre {
@@ -532,7 +539,7 @@ a {
 .coeur__plein {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   opacity: 0%;
   position: absolute;
@@ -636,6 +643,7 @@ a {
   visibility: hidden;
   -webkit-animation: visibility 2500ms linear;
           animation: visibility 2500ms linear;
+  overflow: hidden;
 }
 
 .loader__border {
@@ -718,6 +726,56 @@ a {
   100% {
     visibility: hidden;
     opacity: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .footer__bloc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .menu {
+    max-width: 90%;
+  }
+  .menu__grille {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu__grille__bloc {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    max-width: 30%;
+  }
+  .acceuil-resto {
+    max-width: 100%;
+  }
+  .acceuil-resto__vignettes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
   }
 }
 /*# sourceMappingURL=style.css.map */
