@@ -9,14 +9,19 @@
     <title>ohmyfood</title>
     <link rel="shortcut icon" href="./images/logo/ohmyfood.png">
     <link rel="stylesheet" href="./Css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
 
 </head>
 <body>
+    <!-- **********************************************SPINNER********************************************* -->
+    <div class="loader">
+        <div class="loader__border"></div>
+    </div>
     <!-- *********************************************Logo Titre************************************* -->
     <header>
-        <div class="logo">
+        <div class="header">
             <a href="index.html">
-                <img src="./images/logo/ohmyfood.png" alt="ohmyfood">
+                <img src="./images/logo/ohmyfood.png" alt="ohmyfood" class="header__logo">
             </a>
         </div>
     </header>
@@ -56,6 +61,7 @@
                     </div>
             </div>
         </section>
+        <!-- <div class="acceuil__body"> -->
         <section class="acceuil-resto">
             <!-- ********************************Restaurants************************************* -->
             <h2 class="acceuil-resto__titre">Restaurants</h2>
@@ -69,7 +75,10 @@
                                 <h4 class="acceuil-resto__bloc__titre">La palette du goût</h4>
                                 <p class="acceuil-resto__bloc__texte">Ménilmontant</p>
                             </div>
-                            <i class="far fa-heart acceuil-resto__bloc--icone"></i>
+                            <div class="coeur">
+                                <i class="far fa-heart coeur__vide acceuil-resto__bloc--icone"></i>
+                                <i class="fas fa-heart coeur__plein acceuil-resto__bloc--icone"></i>
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -82,7 +91,10 @@
                                 <h4 class="acceuil-resto__bloc__titre">La note enchantée</h4>
                                 <p class="acceuil-resto__bloc__texte">Charonne</p>
                             </div>
-                            <i class="far fa-heart acceuil-resto__bloc--icone"></i>
+                            <div class="coeur">
+                                <i class="far fa-heart coeur__vide acceuil-resto__bloc--icone"></i>
+                                <i class="fas fa-heart coeur__plein acceuil-resto__bloc--icone"></i>
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -94,7 +106,10 @@
                                 <h4 class="acceuil-resto__bloc__titre">A la française</h4>
                                 <p class="acceuil-resto__bloc__texte">Cité Rouge</p>
                             </div>
-                            <i class="far fa-heart acceuil-resto__bloc--icone"></i>
+                            <div class="coeur">
+                                <i class="far fa-heart coeur__vide acceuil-resto__bloc--icone"></i>
+                                <i class="fas fa-heart coeur__plein acceuil-resto__bloc--icone"></i>
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -106,19 +121,25 @@
                                 <h4 class="acceuil-resto__bloc__titre">Le délice des sens</h4>
                                 <p class="acceuil-resto__bloc__texte">Folie-Méricourt</p>
                             </div>
-                            <i class="far fa-heart acceuil-resto__bloc--icone"></i>
+                            <div class="coeur">
+                                <i class="far fa-heart coeur__vide acceuil-resto__bloc--icone"></i>
+                                <i class="fas fa-heart coeur__plein acceuil-resto__bloc--icone"></i>
+                            </div>
                         </div>
                     </div>
                 </a>
             </div>
         </section>
+    </div>
     </main>
-    <footer>
-        <h5>ohmyfood</h5>
-        <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
-        <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
-        <p>Mention légales</p>
-        <a href="mailto:contact@ohmyfood.com">Contact</a>
+    <footer class="footer">
+        <div class="footer__bloc">
+            <h5 class="footer__bloc__logo">ohmyfood</h5>
+            <p><i class="fas fa-utensils footer__bloc--icone"></i>Proposer un restaurant</p>
+            <p><i class="fas fa-hands-helping footer__bloc--icone"></i>Devenir partenaire</p>
+            <p>Mention légales</p>
+            <a class="footer__bloc__contact" href="mailto:contact@ohmyfood.com" >Contact</a>
+        </div>
     </footer>
 </body>
 </html>
