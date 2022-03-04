@@ -345,7 +345,7 @@ a{
         color: white;
         font-size: 30px;
         transform: rotate(180deg);
-        transition: rotate 500ms both;
+        transition: rotate 500ms ;
     }
 }
 
@@ -353,7 +353,6 @@ a{
 .footer{
     background-color: #3a3a3a;
     width: 100%;
-    
     &__bloc{
         padding: 20px;
         color: white;
