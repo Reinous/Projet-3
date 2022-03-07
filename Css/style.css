@@ -55,20 +55,6 @@ a {
   margin: 15px;
 }
 
-.acceuil__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-}
-
 .section-acceuil {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,6 +90,16 @@ a {
   color: white;
   padding: 15px;
   border-radius: 100px;
+  min-width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .Bouton-violet:hover {
@@ -142,6 +138,7 @@ a {
   background: #f6f6f6;
   height: auto;
   width: 90%;
+  max-width: 1000px;
   margin: 10px 20px;
   border-radius: 20px;
   position: relative;
@@ -233,7 +230,7 @@ a {
 
 .acceuil-resto__image {
   width: 100%;
-  max-height: 300px;
+  max-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0 0;
@@ -318,7 +315,7 @@ a {
 .header__arrow {
   font-size: 20px;
   position: absolute;
-  left: 35px;
+  left: 10px;
   top: 35px;
 }
 
@@ -326,9 +323,8 @@ a {
   margin-top: -100px;
   z-index: 2;
   position: relative;
-  border-radius: 25px 25px 0 0;
-  width: 100%;
-  max-width: 1100px;
+  border-radius: 50px 50px 0 0;
+  width: 96%;
   background-color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,6 +340,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 20px;
+  padding-top: 30px;
 }
 
 .menu__header {
@@ -636,7 +633,12 @@ a {
           animation-delay: 0.9s;
 }
 
-body {
+#case-10 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.body__spinner {
   overflow: auto;
   -webkit-animation: overflow 2500ms linear;
           animation: overflow 2500ms linear;
@@ -761,7 +763,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
   .footer__bloc {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -776,9 +778,6 @@ body {
         align-content: center;
     -ms-flex-item-align: center;
         align-self: center;
-  }
-  .menu {
-    max-width: 90%;
   }
   .menu__grille {
     -webkit-box-orient: horizontal;
@@ -796,7 +795,7 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    max-width: 30%;
+    max-width: 33%;
   }
   .acceuil-resto {
     max-width: 100%;
