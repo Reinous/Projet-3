@@ -202,7 +202,8 @@ a {
 }
 
 .acceuil-resto__vignettes--lien:hover {
-  scale: 1.05;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
 }
