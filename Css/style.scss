@@ -26,11 +26,14 @@ a{
 
 .header{
     @include flexbox-center;
-    // position: relative;
-    &__logo{
-        height: 50px;
-        margin: 20px 0;
+    position: relative;
+    width: 100vw;
+    &--logo{  
         @include flexbox-center;
+    }
+    &__logo{
+        max-width: 50%;
+        margin: 20px 0;
     }
 }
 
@@ -209,8 +212,9 @@ a{
 .header__arrow{
     font-size: 20px;
     position: absolute;
-    left: 10px;
-    top: 35px;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%) translateX(75%);
 }
 .menu{
     margin-top: -100px;
